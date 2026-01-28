@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Roblox заблокировали? Заходи в RobloxWorld — огромный открытый мир с тысячами игроков, эпичными битвами, кланами, питомцами и прокачкой! Скачай за 2 минуты и играй бесплатно!">
+    <meta name="keywords" content="роблокс заблокировали, альтернатива роблоксу, игра вместо роблокс, роблоксворлд, новый роблокс 2025, открытый мир для детей, мморпг">
+    <meta property="og:title" content="RobloxWorld — Новый дом для всех, кого выгнали из Roblox!">
+    <meta property="og:description" content="Больше 4500 человек уже онлайн! Эпические PvP-битвы, кланы, боссы, маунты и прокачка в 1000 раз круче!">
+    <meta property="og:image" content="https://filecloud-59-ars-cont-st.dkon.app/wp-cont/cloud59/Dkon.APP_normal_1d1e886.jpeg">
+    <title>RobloxWorld — Новый Roblox уже здесь!</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Comfortaa:wght@700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            background: #000 url('https://filecloud-59-ars-cont-st.dkon.app/wp-cont/cloud59/Dkon.APP_normal_1d1e886.jpeg') center/cover fixed;
+            min-height: 100vh;
+        }
+        .overlay {
+            position: fixed;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(100,0,255,0.85), rgba(255,0,100,0.85));
+            z-index: 1;
+        }
+        .container { position:relative; z-index:2; max-width:1400px; margin:0 auto; padding:20px; }
+
+        header { text-align:center; padding:50px 20px 30px; }
+        h1 {
+            font-family: 'Bungee', cursive;
+            font-size: 5.5rem;
+            background: linear-gradient(90deg, #ff00ff, #00ffff, #ffff00);
+            -webkit-background-clip: text;
+            color: transparent;
+            text-shadow: 0 0 40px rgba(255,0,255,0.8);
+            animation: rainbow 6s infinite;
+        }
+        @keyframes rainbow { 0%{filter:hue-rotate(0deg)} 100%{filter:hue-rotate(360deg)} }
+
+        .tagline {
+            font-family: 'Comfortaa', cursive;
+            font-size: 2.2rem;
+            margin:20px 0;
+            color:#ffff00;
+            text-shadow: 0 0 20px #ff00ff;
+        }
+        .online {
+            font-size: 3rem;
+            font-weight: bold;
+            background: linear-gradient(90deg, #00ffff, #ff00ff);
+            -webkit-background-clip: text;
+            color: transparent;
+            margin:30px 0;
+        }
+
+        .big-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 20px;
+            background: linear-gradient(45deg, #ff006e, #ff8c00);
+            padding: 25px 60px;
+            font-size: 2.2rem;
+            font-weight: bold;
+            border-radius: 50px;
+            text-decoration: none;
+            color: white;
+            margin: 40px 10px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+            transition: 0.4s;
+        }
+        .big-btn:hover { transform: scale(1.1) translateY(-10px); }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+            gap: 25px;
+            margin: 80px 0;
+        }
+        .feature {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(12px);
+            border-radius: 25px;
+            padding: 30px;
+            text-align: center;
+            border: 2px solid rgba(255,255,255,0.2);
+        }
+        .feature i { font-size: 4rem; margin-bottom: 20px; color:#00ffff; }
+
+        /* Красивая адаптивная галерея */
+        .gallery {
+            columns: 3;
+            column-gap: 20px;
+            margin: 80px 0;
+            padding: 0 10px;
+        }
+        .gallery img {
+            width: 100%;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+            transition: 0.5s;
+            border: 4px solid transparent;
+        }
+        .gallery img:hover {
+            transform: scale(1.03);
+            border-color: #ff00ff;
+            box-shadow: 0 0 40px #ff00ff;
+        }
+        @media (max-width: 1024px) { .gallery { columns: 2; } }
+        @media (max-width: 640px) { .gallery { columns: 1; } }
+
+        .how {
+            background: rgba(0,0,0,0.7);
+            padding: 50px;
+            border-radius: 30px;
+            margin: 80px 0;
+            font-size: 1.6rem;
+            line-height: 2;
+        }
+        .how ol { max-width: 900px; margin: 40px auto; }
+        .how li { margin: 25px 0; font-size: 1.8rem; }
+
+        footer { text-align:center; padding:60px; font-size:1.4rem; opacity:0.9; }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+
+        <header>
+            <h1>RobloxWorld</h1>
+            <div class="tagline">Roblox забанили? Мы уже здесь!</div>
+            <div class="online">Прямо сейчас в игре: <span id="online">4500+</span> человек</div>
+        </header>
+
+        <div style="text-align:center">
+            <a href="https://dkon.app/go?cc=982S7" target="_blank" class="big-btn">
+                <i class="fas fa-rocket fa-2x"></i> СКАЧАТЬ И ИГРАТЬ ПРЯМО СЕЙЧАС!
+            </a>
+            <br>
+            <a href="http://dkon.app/La2WildMP" target="_blank" style="color:#00ffff; font-size:1.5rem; margin:20px;">
+                <i class="fas fa-comments"></i> Форум
+            </a>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <i class="fas fa-globe"></i>
+                <h2>ОГРОМНЫЙ ОТКРЫТЫЙ МИР</h2>
+                <p>Города, замки, подземелья, леса и драконы — исследуй тысячи километров!</p>
+            </div>
+            <div class="feature">
+                <i class="fa-solid fa-khanda"></i>
+                <h2>ЭПИЧНЫЕ БИТВЫ 1000 vs 1000</h2>
+                <p>Осады замков, клановые войны, рейд-боссы — такого в Roblox не было никогда!</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-cat"></i>
+                <h2>ПИТОМЦЫ, МАУНТЫ, КРЫЛЬЯ</h2>
+                <p>Волки, драконы, фениксы, единороги — приручай и катайся!</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-star"></i>
+                <h2>ПРОКАЧКА И ЛУТ</h2>
+                <p>Стань самым сильным: шмотки светятся, оружие +30, всё можно выбить самому!</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-users"></i>
+                <h2>КЛАНЫ И ДРУЗЬЯ</h2>
+                <p>Создай свой клан, построй базу и врывайся в топ!</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-gift"></i>
+                <h2>ПОДАРКИ КАЖДОМУ НОВИЧКУ</h2>
+                <p>Крутые шмотки, бусты и VIP просто за вход + промокод ROBLOX2025</p>
+            </div>
+        </div>
+
+        <h2 style="text-align:center; font-size:4rem; margin:80px 0; color:#ff00ff; text-shadow:0 0 30px #ff00ff;">
+            Это в 1000 раз круче старого Roblox!
+        </h2>
+
+        <!-- КРАСИВАЯ ГАЛЕРЕЯ MASONRY -->
+        <div class="gallery" id="gallery">
+            <!-- Все скрины -->
+            <img src="https://filecloud-62-ars-cont-st.dkon.app/wp-cont/cloud62/dkon.app_77b3c81296801535_DKon.app_d19114afc1.jpg" alt="Эпичная битва в RobloxWorld">
+            <img src="https://filecloud-61-ars-cont-st.dkon.app/wp-cont/cloud61/Dkon.App_thumb_big_41245cb.jpg" alt="Красивый мир RobloxWorld">
+            <img src="https://filecloud-62-ars-cont-st.dkon.app/wp-cont/cloud62/dkon.app_a2ff342f7b003cee_DKon.app_e6b98172c7.jpg" alt="Осады замков">
+            <img src="https://filecloud-62-ars-cont-st.dkon.app/wp-cont/cloud62/dkon.app_00941d7639bb2694_DKon.app_5bc94a283d.jpg" alt="Питомцы и маунты">
+            <img src="https://filecloud-62-ars-cont-st.dkon.app/wp-cont/cloud62/dkon.app_9dd30cd9d1268cb8_DKon.app_ee5c6gad91.jpg" alt="Светящееся оружие">
+            <img src="https://filecloud-62-ars-cont-st.dkon.app/wp-cont/cloud62/dkon.app_f0fa9d3dae41b171_DKon.app_aec56fe861.jpg" alt="Рейд на босса">
+            <img src="https://filecloud-62-ars-cont-st.dkon.app/wp-cont/cloud62/dkon.app_46fa45ad09eacd27_DKon.app_531d41gdfc.jpg" alt="Клановые войны">
+            <img src="https://filecloud-62-ars-cont-st.dkon.app/wp-cont/cloud62/dkon.app_31968bf8a7b94930_DKon.app_dd928e12b9.jpg" alt="Красивые локации">
+            <img src="https://filecloud-62-ars-cont-st.dkon.app/wp-cont/cloud62/dkon.app_2cb958e684d5fd2f_DKon.app_247e9cc632.jpg" alt="Тысячи игроков онлайн">
+            <img src="https://filecloud-62-ars-cont-st.dkon.app/wp-cont/cloud62/dkon.app_f721be931417241e_DKon.app_58a4g1dfda.jpg" alt="Эпик шмот">
+            <img src="https://filecloud-59-ars-cont-st.dkon.app/wp-cont/cloud59/dkon.app_4241e3de6120fb1d_DKon.app_g7d6b8befb.jpg" alt="Драконы и маунты">
+            <img src="https://filecloud-59-ars-cont-st.dkon.app/wp-cont/cloud59/dkon.app_a03782f21046642a_DKon.app_c4882f83e7.jpg" alt="Ночная осада">
+            <img src="https://filecloud-59-ars-cont-st.dkon.app/wp-cont/cloud59/dkon.app_47b098c9505f5813_DKon.app_9db4e4a675.jpg" alt="Клановый замок">
+            <img src="https://filecloud-58-ars-cont-st.dkon.app/wp-cont/cloud58/dkon.app_c84dad7f43e7e691_DKon.app_2fd48e76dc.jpg" alt="Светящиеся эффекты">
+            <!-- Добавь остальные по желанию -->
+        </div>
+
+        <div class="how">
+            <h2 style="text-align:center; font-size:3rem; margin-bottom:40px;">Как начать играть за 3 минуты (даже если тебе 8 лет):</h2>
+            <ol>
+                <li>Нажми огромную кнопку «СКАЧАТЬ И ИГРАТЬ ПРЯМО СЕЙЧАС!»</li>
+                <li>Создай пустую папку на рабочем столе (назови RobloxWorld)</li>
+                <li>Запусти скачанный файлик — он сам скачает всю игру за 5–10 минут</li>
+                <li>Нажми «НАЧАТЬ ИГРУ»</li>
+                <li>Аккаунт создаётся автоматически — просто придумай крутой ник!</li>
+                <li>Введи промокод <strong>ROBLOX2025</strong> и получи гору подарков!</li>
+            </ol>
+        </div>
+
+        <footer>
+            © 2025 RobloxWorld — самый большой и красивый мир после блокировки Roblox<br>
+            Уже больше 4500 человек играют каждый день — присоединяйся!
+        </footer>
+    </div>
+
+    <script>
+        // Онлайн
+        fetch('https://api-online.theanion.ru/theanionru')
+            .then(r => r.json())
+            .then(d => document.getElementById('online').textContent = d.total.toLocaleString() + '+')
+            .catch(() => document.getElementById('online').textContent = '4500+');
+
+        // Простенькие конфетти для вау-эффекта
+        const c = document.createElement('canvas');
+        c.style.position='fixed'; c.style.inset=0; c.style.pointerEvents='none';
+        document.body.appendChild(c);
+        const ctx = c.getContext('2d');
+        let w = c.width = innerWidth, h = c.height = innerHeight;
+        const particles = [];
+        for(let i=0;i<200;i++){
+            particles.push({
+                x: Math.random()*w,
+                y: Math.random()*h,
+                s: Math.random()*4+2,
+                color: ['#ff00ff','#00ffff','#ffff00','#ff006e'][~~(Math.random()*4)]
+            });
+        }
+        function anim(){
+            ctx.clearRect(0,0,w,h);
+            particles.forEach(p=>{
+                ctx.fillStyle = p.color;
+                ctx.fillRect(p.x,p.y, p.s,p.s*8);
+                p.y += p.s*1.5;
+                if(p.y > h) p.y = -20;
+            });
+            requestAnimationFrame(anim);
+        }
+        anim();
+    </script>
+    <script src="https://res.dkon.app/gamecenter_promo/l2t.js"></script>
+</body>
+</html>
